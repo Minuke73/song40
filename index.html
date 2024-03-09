@@ -11,7 +11,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
-<title>4학년_2_36p_아리랑_20240229</title>
+<title>4학년_2_36p_아리랑_20240310</title>
 <!-- write your code here -->
 <style>
   #animation_container, #_preload_div_ {
@@ -399,6 +399,27 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,0,70,70);
+(lib.play_bg = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// 레이어_2
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#444444").s().p("AizC0QhKhLAAhpQAAhpBKhKQBLhLBoABQBqgBBKBLQBKBKAABpQAABphKBLQhKBKhqAAQhoAAhLhKgAg+hmQgQAJAAATIAACWQAAASAQAJQAHAEAJAAQAJAAAHgEICChMQAQgIAAgTQAAgSgQgJIiChLQgIgFgIAAQgIAAgIAFg");
+	this.shape.setTransform(48.325,48.75);
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#FFFFFF").s().p("AhRBnQgPgJAAgSIAAiWQAAgTAQgJQAQgKAPAKICCBMQAQAJAAARQAAATgQAJIiCBLQgHAFgJAAQgIAAgIgFg");
+	this.shape_1.setTransform(50.175,48.725);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(22.9,23.3,50.9,50.900000000000006);
 (lib.stop = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -618,7 +639,7 @@ if (reversed == null) { reversed = false; }
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-545,39.9,70,70);
 // stage content:
-(lib._4학년_2_36p_아리랑_20240229 = function(mode,startPosition,loop,reversed) {
+(lib._4학년_2_36p_아리랑_20240310 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = false; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -643,34 +664,44 @@ if (reversed == null) { reversed = false; }
 		/*메뉴 네비게이션*/
 		_this.listen_btn.on('click', function () {
 			_this.gotoAndStop('노래듣기');
+			_this.play_btn.visible = true;
 		});
 		_this.expert_btn.on('click', function () {
 			_this.gotoAndStop('전문가창');
+			_this.play_btn.visible = true;
 		});
 		_this.listen2_btn.on('click', function () {
 			_this.gotoAndStop('반주듣기');
+			_this.play_btn.visible = true;
 		});
 		_this.singAlong_btn.on('click', function () {
 			_this.gotoAndStop('따라부르');
+			_this.play_btn.visible = true;
 		});
 		/*플레이컨트롤*/
 		_this.play_btn.on('click', function () {
 			_this.play();
+			_this.play_btn.visible = false;
 		});
 		_this.pause_btn.on('click', function () {
 			_this.stop();
+			_this.play_btn.visible = true;
 		});
 		_this.stop1_btn.on('click', function () {
 			_this.gotoAndStop('노래듣기');
+			_this.play_btn.visible = true;
 		});
 		_this.stop2_btn.on('click', function () {
 			_this.gotoAndStop('전문가창');
+			_this.play_btn.visible = true;
 		});
 		_this.stop4_btn.on('click', function () {
 			_this.gotoAndStop('반주듣기');
+			_this.play_btn.visible = true;
 		});
 		_this.stop3_btn.on('click', function(){
 			_this.gotoAndStop('따라부르');
+			_this.play_btn.visible = true;
 		});
 	}
 	this.frame_1213 = function() {
@@ -3817,6 +3848,8 @@ if (reversed == null) { reversed = false; }
 	this.shape_710.setTransform(182.2938,444.2887,2.4309,2.431);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_688},{t:this.shape_687,p:{x:292.5598,y:442.7214}},{t:this.shape_686},{t:this.shape_685},{t:this.shape_684,p:{x:414.7106,y:442.7214}},{t:this.shape_683},{t:this.shape_682,p:{x:543.1817,y:442.7214}},{t:this.shape_681},{t:this.shape_680},{t:this.shape_679,p:{x:663.0232,y:442.7214}},{t:this.shape_678},{t:this.shape_677},{t:this.shape_676,p:{x:822.974,y:442.7214}},{t:this.shape_675,p:{x:847.4041,y:442.7214}},{t:this.shape_674},{t:this.shape_673,p:{x:920.6946,y:442.7214}},{t:this.shape_672},{t:this.shape_671,p:{x:1051.5966,y:442.7214}},{t:this.shape_670,p:{x:1100.3961,y:442.7214}},{t:this.shape_669,p:{x:1125.3732,y:442.7214}},{t:this.shape_668,p:{x:1151.0188,y:442.7214}},{t:this.shape_667},{t:this.shape_666},{t:this.shape_665},{t:this.shape_664},{t:this.shape_663},{t:this.shape_662},{t:this.shape_661},{t:this.shape_660},{t:this.shape_659},{t:this.shape_658},{t:this.shape_657},{t:this.shape_656},{t:this.shape_655},{t:this.shape_654},{t:this.shape_653},{t:this.shape_652},{t:this.shape_651}]}).to({state:[{t:this.shape_710},{t:this.shape_709},{t:this.shape_708},{t:this.shape_707},{t:this.shape_706},{t:this.shape_705},{t:this.shape_704},{t:this.shape_703},{t:this.shape_702},{t:this.shape_701},{t:this.shape_700},{t:this.shape_699},{t:this.shape_687,p:{x:1044.7017,y:442.8503}},{t:this.shape_684,p:{x:1095.3244,y:442.8503}},{t:this.shape_682,p:{x:1120.9093,y:442.8503}},{t:this.shape_679,p:{x:1146.4941,y:442.8503}},{t:this.shape_698},{t:this.shape_676,p:{x:257.7708,y:643.5256}},{t:this.shape_697},{t:this.shape_696},{t:this.shape_675,p:{x:385.7557,y:643.5256}},{t:this.shape_695},{t:this.shape_673,p:{x:495.1445,y:643.5256}},{t:this.shape_694},{t:this.shape_671,p:{x:571.2913,y:643.5256}},{t:this.shape_693},{t:this.shape_670,p:{x:647.4988,y:643.5256}},{t:this.shape_692},{t:this.shape_669,p:{x:782.4117,y:643.5256}},{t:this.shape_691},{t:this.shape_690},{t:this.shape_689},{t:this.shape_668,p:{x:1045.3094,y:643.5256}}]},798).to({state:[{t:this.shape_688},{t:this.shape_687,p:{x:292.5598,y:442.7214}},{t:this.shape_686},{t:this.shape_685},{t:this.shape_684,p:{x:414.7106,y:442.7214}},{t:this.shape_683},{t:this.shape_682,p:{x:543.1817,y:442.7214}},{t:this.shape_681},{t:this.shape_680},{t:this.shape_679,p:{x:663.0232,y:442.7214}},{t:this.shape_678},{t:this.shape_677},{t:this.shape_676,p:{x:822.974,y:442.7214}},{t:this.shape_675,p:{x:847.4041,y:442.7214}},{t:this.shape_674},{t:this.shape_673,p:{x:920.6946,y:442.7214}},{t:this.shape_672},{t:this.shape_671,p:{x:1051.5966,y:442.7214}},{t:this.shape_670,p:{x:1100.3961,y:442.7214}},{t:this.shape_669,p:{x:1125.3732,y:442.7214}},{t:this.shape_668,p:{x:1151.0188,y:442.7214}},{t:this.shape_667},{t:this.shape_666},{t:this.shape_665},{t:this.shape_664},{t:this.shape_663},{t:this.shape_662},{t:this.shape_661},{t:this.shape_660},{t:this.shape_659},{t:this.shape_658},{t:this.shape_657},{t:this.shape_656},{t:this.shape_655},{t:this.shape_654},{t:this.shape_653},{t:this.shape_652},{t:this.shape_651}]},416).to({state:[{t:this.shape_710},{t:this.shape_709},{t:this.shape_708},{t:this.shape_707},{t:this.shape_706},{t:this.shape_705},{t:this.shape_704},{t:this.shape_703},{t:this.shape_702},{t:this.shape_701},{t:this.shape_700},{t:this.shape_699},{t:this.shape_687,p:{x:1044.7017,y:442.8503}},{t:this.shape_684,p:{x:1095.3244,y:442.8503}},{t:this.shape_682,p:{x:1120.9093,y:442.8503}},{t:this.shape_679,p:{x:1146.4941,y:442.8503}},{t:this.shape_698},{t:this.shape_676,p:{x:257.7708,y:643.5256}},{t:this.shape_697},{t:this.shape_696},{t:this.shape_675,p:{x:385.7557,y:643.5256}},{t:this.shape_695},{t:this.shape_673,p:{x:495.1445,y:643.5256}},{t:this.shape_694},{t:this.shape_671,p:{x:571.2913,y:643.5256}},{t:this.shape_693},{t:this.shape_670,p:{x:647.4988,y:643.5256}},{t:this.shape_692},{t:this.shape_669,p:{x:782.4117,y:643.5256}},{t:this.shape_691},{t:this.shape_690},{t:this.shape_689},{t:this.shape_668,p:{x:1045.3094,y:643.5256}}]},795).to({state:[{t:this.shape_688},{t:this.shape_687,p:{x:292.5598,y:442.7214}},{t:this.shape_686},{t:this.shape_685},{t:this.shape_684,p:{x:414.7106,y:442.7214}},{t:this.shape_683},{t:this.shape_682,p:{x:543.1817,y:442.7214}},{t:this.shape_681},{t:this.shape_680},{t:this.shape_679,p:{x:663.0232,y:442.7214}},{t:this.shape_678},{t:this.shape_677},{t:this.shape_676,p:{x:822.974,y:442.7214}},{t:this.shape_675,p:{x:847.4041,y:442.7214}},{t:this.shape_674},{t:this.shape_673,p:{x:920.6946,y:442.7214}},{t:this.shape_672},{t:this.shape_671,p:{x:1051.5966,y:442.7214}},{t:this.shape_670,p:{x:1100.3961,y:442.7214}},{t:this.shape_669,p:{x:1125.3732,y:442.7214}},{t:this.shape_668,p:{x:1151.0188,y:442.7214}},{t:this.shape_667},{t:this.shape_666},{t:this.shape_665},{t:this.shape_664},{t:this.shape_663},{t:this.shape_662},{t:this.shape_661},{t:this.shape_660},{t:this.shape_659},{t:this.shape_658},{t:this.shape_657},{t:this.shape_656},{t:this.shape_655},{t:this.shape_654},{t:this.shape_653},{t:this.shape_652},{t:this.shape_651}]},412).to({state:[{t:this.shape_710},{t:this.shape_709},{t:this.shape_708},{t:this.shape_707},{t:this.shape_706},{t:this.shape_705},{t:this.shape_704},{t:this.shape_703},{t:this.shape_702},{t:this.shape_701},{t:this.shape_700},{t:this.shape_699},{t:this.shape_687,p:{x:1044.7017,y:442.8503}},{t:this.shape_684,p:{x:1095.3244,y:442.8503}},{t:this.shape_682,p:{x:1120.9093,y:442.8503}},{t:this.shape_679,p:{x:1146.4941,y:442.8503}},{t:this.shape_698},{t:this.shape_676,p:{x:257.7708,y:643.5256}},{t:this.shape_697},{t:this.shape_696},{t:this.shape_675,p:{x:385.7557,y:643.5256}},{t:this.shape_695},{t:this.shape_673,p:{x:495.1445,y:643.5256}},{t:this.shape_694},{t:this.shape_671,p:{x:571.2913,y:643.5256}},{t:this.shape_693},{t:this.shape_670,p:{x:647.4988,y:643.5256}},{t:this.shape_692},{t:this.shape_669,p:{x:782.4117,y:643.5256}},{t:this.shape_691},{t:this.shape_690},{t:this.shape_689},{t:this.shape_668,p:{x:1045.3094,y:643.5256}}]},1184).to({state:[{t:this.shape_688},{t:this.shape_687,p:{x:292.5598,y:442.7214}},{t:this.shape_686},{t:this.shape_685},{t:this.shape_684,p:{x:414.7106,y:442.7214}},{t:this.shape_683},{t:this.shape_682,p:{x:543.1817,y:442.7214}},{t:this.shape_681},{t:this.shape_680},{t:this.shape_679,p:{x:663.0232,y:442.7214}},{t:this.shape_678},{t:this.shape_677},{t:this.shape_676,p:{x:822.974,y:442.7214}},{t:this.shape_675,p:{x:847.4041,y:442.7214}},{t:this.shape_674},{t:this.shape_673,p:{x:920.6946,y:442.7214}},{t:this.shape_672},{t:this.shape_671,p:{x:1051.5966,y:442.7214}},{t:this.shape_670,p:{x:1100.3961,y:442.7214}},{t:this.shape_669,p:{x:1125.3732,y:442.7214}},{t:this.shape_668,p:{x:1151.0188,y:442.7214}},{t:this.shape_667},{t:this.shape_666},{t:this.shape_665},{t:this.shape_664},{t:this.shape_663},{t:this.shape_662},{t:this.shape_661},{t:this.shape_660},{t:this.shape_659},{t:this.shape_658},{t:this.shape_657},{t:this.shape_656},{t:this.shape_655},{t:this.shape_654},{t:this.shape_653},{t:this.shape_652},{t:this.shape_651}]},819).to({state:[{t:this.shape_710},{t:this.shape_709},{t:this.shape_708},{t:this.shape_707},{t:this.shape_706},{t:this.shape_705},{t:this.shape_704},{t:this.shape_703},{t:this.shape_702},{t:this.shape_701},{t:this.shape_700},{t:this.shape_699},{t:this.shape_687,p:{x:1044.7017,y:442.8503}},{t:this.shape_684,p:{x:1095.3244,y:442.8503}},{t:this.shape_682,p:{x:1120.9093,y:442.8503}},{t:this.shape_679,p:{x:1146.4941,y:442.8503}},{t:this.shape_698},{t:this.shape_676,p:{x:257.7708,y:643.5256}},{t:this.shape_697},{t:this.shape_696},{t:this.shape_675,p:{x:385.7557,y:643.5256}},{t:this.shape_695},{t:this.shape_673,p:{x:495.1445,y:643.5256}},{t:this.shape_694},{t:this.shape_671,p:{x:571.2913,y:643.5256}},{t:this.shape_693},{t:this.shape_670,p:{x:647.4988,y:643.5256}},{t:this.shape_692},{t:this.shape_669,p:{x:782.4117,y:643.5256}},{t:this.shape_691},{t:this.shape_690},{t:this.shape_689},{t:this.shape_668,p:{x:1045.3094,y:643.5256}}]},800).wait(418));
 	// bg
+	this.instance_5 = new lib.play_bg("synched",0);
+	this.instance_5.setTransform(562.5,750.25,1,1,0,0,0,48.3,48.8);
 	this.shape_711 = new cjs.Shape();
 	this.shape_711.graphics.f("#FFFFFF").s().p("EAbGAwvQh5AAhWhWQhWhWAAh6QAAh6hWhWQhWhVh6AAMgjnAAAQh5AAhWBVQhWBWAAB6QAAB6hWBWQhWBWh6AAMg7mAAAQjsAAioioQininAAjsMAAAhPnQAAjsCnioQCoinDsAAMCs7AAAQDsAACoCnQCnCoAADsMAAABPnQAADsinCnQioCojsAAg");
 	this.shape_711.setTransform(639.325,457.45);
@@ -3829,7 +3862,7 @@ if (reversed == null) { reversed = false; }
 	this.shape_714 = new cjs.Shape();
 	this.shape_714.graphics.f("#ED1C24").s().p("At7FeIAAiUIPPAAIAAonIPQAAIAAK7gAwjFeIAAq7ICoAAIAAInIAACUgAt7DKIAAonIPPAAIAAIngAt7DKgAt7ldg");
 	this.shape_714.setTransform(1097.175,248.575);
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_714},{t:this.shape_713},{t:this.shape_712},{t:this.shape_711}]}).wait(5642));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_714},{t:this.shape_713},{t:this.shape_712},{t:this.shape_711},{t:this.instance_5}]}).wait(5642));
 	this._renderFirstFrame();
 }).prototype = p = new lib.AnMovieClip();
 p.nominalBounds = new cjs.Rectangle(640.5,400,640,1303.6);
@@ -3978,7 +4011,7 @@ function handleComplete(evt,comp) {
 	var preloaderDiv = document.getElementById("_preload_div_");
 	preloaderDiv.style.display = 'none';
 	canvas.style.display = 'block';
-	exportRoot = new lib._4학년_2_36p_아리랑_20240229();
+	exportRoot = new lib._4학년_2_36p_아리랑_20240310();
 	stage = new lib.Stage(canvas);
 	stage.enableMouseOver();	
 	//Registers the "tick" event listener.
